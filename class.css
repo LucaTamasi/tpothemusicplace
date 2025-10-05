@@ -1,0 +1,178 @@
+body {
+    background-color: black;
+    color: white;   
+    font-family: "Alex Brush"; 
+    text-align: center;
+}
+
+.alex-brush-regular {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.bienvenidos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.historia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  gap: 16px;
+  padding: 0 16px;
+}
+
+header{
+    background-color: black;   
+    padding: 15px 0;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+nav ul {
+    list-style: none;       
+    margin: 0;
+    padding: 0;
+    display: flex;           
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 20px;          
+}
+
+
+nav ul li a {
+    text-decoration: none;  
+    color: white;            
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: red;              
+}
+
+#productos, #servicios {
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+h2 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #222;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  display: inline-block;
+  width: 280px;
+  vertical-align: top;
+  text-align: center;
+  transition: 2s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0 5px 0;
+  color: #ff4d4d;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.card:hover {
+  background: red;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.links {
+  text-align: center;
+}
+
+ul {
+  list-style-position: inside; 
+  text-align: center;          
+  padding: 0;       
+}           
+
+nav ul {
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#productos, #servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 16px;
+  max-width: 1100px;
+}
+
+
+.card {
+  flex: 1 1 clamp(220px, 33%, 320px);
+  width: auto;               
+  display: flex;
+  flex-direction: column;    
+}
+
+.card img, img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+input, textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+button { 
+  width: 30%;
+  max-width: 30%;
+  box-sizing: border-box;
+  margin-top: 8px; }
+
+.historia img {
+  display: block;          
+  margin: 0 auto;          
+  max-width: min(900px, 95%);
+  height: auto;
+  border-radius: 12px;
+}
+
+.bienvendidos img {
+  display: block;          
+  margin: 0 auto;          
+  max-width: min(900px, 95%);
+  height: auto;
+  border-radius: 12px;
+}
