@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones</title>
+    <link rel="stylesheet" href="class.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Eagle+Lake&family=Lavishly+Yours&family=Lugrasimo&family=Montserrat&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="nostoros.html">NOSOTROS</a></li>
+            <li><a href="productos.html">PROPUESTAS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="promociones.html">PROMOCIONES</a></li>
+        </ul>
+    </nav>
+</header>
+ <main class="wrap">
+    <h1>Promociones por cantidad</h1>
+    <p class="muted">
+      Descuentos por producto:<br>
+      • 2 unidades: <strong>10% Off</strong> &nbsp;•&nbsp; 3 o más: <strong>15% Off</strong>
+    </p>
+
+    <section class="card2 grid">
+      <div class="grid grid-2">
+        <div>
+          <label for="qGuitarra">Guitarra acústica (precio unitario)</label>
+          <input id="qGuitarra" type="number" min="0" value="0" />
+          <small class="muted" id="precioGuitarraTxt"></small>
+        </div>
+        <div>
+          <label for="qTeclado">Teclado digital (precio unitario)</label>
+          <input id="qTeclado" type="number" min="0" value="0" />
+          <small class="muted" id="precioTecladoTxt"></small>
+        </div>
+      
+      <div>
+        <label for="qPuas">Púas (3x2, precio unitario)</label>
+        <input id="qPuas" type="number" min="0" value="0" />
+        <small class="muted" id="precioPuaTxt"></small>
+      </div>
+
+      <div class="resultado" id="resumen">
+        <p>Total sin descuento: <span class="num" id="sinDesc">$0</span></p>
+        <p>Descuento aplicado: <span class="num" id="desc">$0</span></p>
+        <p>Total final: <span class="num" id="final">$0</span></p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Detalle</th>
+              <th>Subtotal</th>
+              <th>Descuento</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="detalleTabla"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="promociones.js"></script>
+
+  <footer>
+    <p>© 2025 The Music Place</p>
+    <a href="#top" class="volver">Volver al inicio ↑</a>
+  </footer>
+
+</body>
